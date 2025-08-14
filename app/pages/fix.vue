@@ -2,6 +2,7 @@
   <div>
     {{ processedData }}
     <button @click="processedData!.age = 2">Change Data</button>
+    用Watch变成Ref
   </div>
 </template>
 
@@ -11,6 +12,7 @@ const { data } = await useAsyncData('mock', async () => {
   return { name: 'kapa', age: 3 }
 })
 
+console.log(data)
 const processedData = ref();
 
 watch(data, (newValue) => {

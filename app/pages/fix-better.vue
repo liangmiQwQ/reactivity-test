@@ -2,7 +2,7 @@
   <div>
     {{ data }}
     <button @click="data!.age = 2">Change Data</button>
-    直接改 useAsyncData 返回值
+    使用 deep 选项
   </div>
 </template>
 
